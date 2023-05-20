@@ -11,7 +11,9 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-light navbar-light">
         <div class="container">
-            <a href="#" class="navbar-brand">
+            <a type="button" 
+                data-bs-toggle="modal" 
+                data-bs-target="#account">
                 <i class="bi bi-person-fill"></i>
             </a>
             <button 
@@ -24,13 +26,13 @@
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Link 1</a>
+                        <a href="#" class="nav-link">صفحه اصلی</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Link 2</a>
+                        <a href="#" class="nav-link">مستندات</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Link 3</a>
+                        <a href="#" class="nav-link">تماس با ما</a>
                     </li>
                 </ul>
             </div>
@@ -50,8 +52,86 @@
             </div>
         </div>
     </section>
+    <section class="p-5 bg-light">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                            <h3 class="card-title mb-3">Title</h3>
+                            <p class="card-text">Text</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-person-square"></i>
+                            </div>
+                            <h3 class="card-title mb-3">Title</h3>
+                            <p class="card-text">Text</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-people"></i>
+                            </div>
+                            <h3 class="card-title mb-3">Title</h3>
+                            <p class="card-text">Text</p>
+                        </div>
+                    </div>
+                </div>
 
-
+            </div>
+        </div>
+    </section>
+    <section class="p-5 bg-dark">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5 text-end text-light">
+                    <h2>Title</h2>
+                    <p class="lead">Text</p>
+                    <a href="#" class="btn btn-light mt-3">Read More</a>
+                </div>
+                <div class="col-md">
+                    <img class="img-fluid" src="./images/responsive.svg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal fade" id="account">
+        <div class="modal-dialog">
+            <div class="modal-content text-end">
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <lable for="email" class="col-form-lable">Email</lable>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <lable for="password" class="col-form-lable">Password</lable>
+                            <input type="password" class="form-control">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                    </button>   
+                    <button class="btn btn.dark">
+                        Login
+                    </button> 
+                </div>                
+            </div>
+        </div>
+    </div>
     <script src="./js/bootstrap.min.js"></script>
 </body>
 </html>
